@@ -1,8 +1,10 @@
 import React from "react";
-import Button from "./button/button";
 
 function ResultsBooks(resultList) {
-    return ("placeholder");
+    return (
+        <div>
+        </div>
+    );
 }
 
 export default ResultsBooks;

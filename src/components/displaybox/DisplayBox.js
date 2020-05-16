@@ -1,8 +1,10 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import "./tab-panel.css"
 import ResultsBooks from "./ResultsBooks";
 import SavedBooks from "./SavedBooks";
+import SearchBar from "./searchbar/SearchBar";
 
 export default () => (
     <Tabs>
@@ -12,6 +14,7 @@ export default () => (
         </TabList>
 
         <TabPanel>
+            <SearchBar />
             <ResultsBooks />
         </TabPanel>
         <TabPanel>
