@@ -2,9 +2,10 @@ import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import "./tab-panel.css"
-import ResultsBooks from "./ResultsBooks";
+import SearchPanel from "./searchpanel/SearchPanel";
 import SavedBooks from "./SavedBooks";
-import SearchBar from "./searchbar/SearchBar";
+
+
 
 export default () => (
     <Tabs>
@@ -14,8 +15,7 @@ export default () => (
         </TabList>
 
         <TabPanel>
-            <SearchBar />
-            <ResultsBooks />
+            <SearchPanel />
         </TabPanel>
         <TabPanel>
             <SavedBooks />
